@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+<script src=""></script>
+<body>
+    <form action="/login" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        
+        <div>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                   minlength="8" required>
+        </div>
+        
+        <input type="submit" value="Sign in">
+         
+<img src="img_la.jpg" alt="LA" style="width:100%">
+
+<div class="">
+    <script>
+        if(document.location.hash === '#unauthorized') {
+     document.write('<div class=â€œunauthorizedâ€>Invalid Username or Password</div>');
+        } else if(document.location.hash === '#error') {
+     document.write('<div class=â€œerrorâ€>An error has occured</div>');
+        }
+      </script>
+     
+</div>
+
+</body>
+</html>
